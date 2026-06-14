@@ -31,20 +31,37 @@
     letter-spacing: 5px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
-    min-height: calc(100vh - 56px - 100px);
-    padding: 50px;
+  flex: 1 0 auto;
+  padding: 50px;
 }
 
 .footer {
-    height: 100px;
-    background-color: silver;
-    padding: 10px;
+  background-color: #1e2125;
+  color: #f8f9fa;
+  border-top: 3px solid #20c997;
+}
+
+.social-icon {
+  color: #adb5bd;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.social-icon:hover {
+  color: #20c997;
+  transform: translateY(-2px);
 }
 
 .concluido td:not(:last-child) {
-    text-decoration-line: line-through;
-    text-decoration-thickness: 2px;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
 }
 
 .navbar {
